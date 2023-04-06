@@ -1,5 +1,5 @@
 let contador = 0;
-let jogar = document.querySelector('.principal');
+let jogar = document.querySelector('.direction-row');
 let qtdeCartas = Number(prompt('Com quantas cartas quer jogar?'));
 
 while (qtdeCartas < 4 || qtdeCartas > 14 || qtdeCartas % 2 !== 0) {
