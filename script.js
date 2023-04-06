@@ -1,11 +1,11 @@
 const arrayCartas = [
-  'imagens/bobrossparrot.gif',
-  'imagens/explodyparrot.gif',
-  'imagens/fiestaparrot.gif',
-  'imagens/metalparrot.gif',
-  'imagens/revertitparrot.gif',
-  'imagens/tripletsparrot.gif',
-  'imagens/unicornparrot.gif',
+  'images/bobrossparrot.gif',
+  'images/explodyparrot.gif',
+  'images/fiestaparrot.gif',
+  'images/metalparrot.gif',
+  'images/revertitparrot.gif',
+  'images/tripletsparrot.gif',
+  'images/unicornparrot.gif',
 ];
 
 const arraySelecionado = [];
@@ -25,8 +25,6 @@ function quantidadeCartas() {
     );
   }
 
-  let lista = document.querySelector('.div-pai');
-
   contador = 0;
   while (qtdeCartas / 2 > contador) {
     arraySelecionado.push(`${arrayCartas[contador]}`);
@@ -34,30 +32,31 @@ function quantidadeCartas() {
     contador++;
   }
 
+  let lista = document.querySelector('.div-pai');
+
   contador = 0;
   while (qtdeCartas > contador) {
-    lista.innerHTML = lista.innerHTML + `${arrayCartas[contador]}`;
+    lista.innerHTML =
+      lista.innerHTML +
+      `<div class="card" data-test="card">
+            <div class="front-face face">
+                <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image"/>
+            </div>
+            <div class="back-face face">
+                <img class="parrot-virado-cima" src="./${arraySelecionado[contador]}" />
+            </div>
+        </div>`;
     contador++;
+    console.log('arraySelecionado antes', arraySelecionado);
   }
+
   console.log('qtdeCartas', qtdeCartas);
   console.log('lista', lista);
   console.log('lista.innerHTML', lista.innerHTML);
   console.log('arrayCartas', arrayCartas);
   console.log('arrayCartas[contador]', arrayCartas[contador]);
   console.log('arrayCartas.length', arrayCartas.length);
-  console.log('arraySelecionado', arraySelecionado);
+  console.log('arraySelecionado depoiss', arraySelecionado);
   console.log('contador', contador);
 }
 quantidadeCartas();
-
-function criarCarta() {
-  cartaCriada += `<div class="card" data-test="card">
-<div class="front-face face">
-    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-</div>
-<div class="back-face face">
-    <img class="parrot-virado-cima" src=${arraySelecionado} data-test="face-up-image" >
-</div>
-</div>`;
-}
-criarCarta();
