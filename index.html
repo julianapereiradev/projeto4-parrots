@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Parrots</title>
     <link
       href="./css/reset.css"
@@ -34,131 +29,77 @@
     />
   </head>
 
-  <body>
-    <h1>PARROT CARD GAME</h1>
-    <!-- <div class="direction-row">
+<body>
 
-        <div class="primeira-linha">
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                   <img class="parrot-virado-cima" src="./images/bobrossparrot.gif" data-test="face-up-image" >
-                </div>
+    <h1 class="titulo-jogo">PARROT CARD GAME</h1>
+    <div class="container">
+
+            <div id="1" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/bobrossparrot.gif" data-test="face-up-image">
             </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/explodyparrot.gif" data-test="face-up-image" >
-                </div>
+            <div id="1" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/bobrossparrot.gif" data-test="face-up-image">
             </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/fiestaparrot.gif" data-test="face-up-image" >
-                </div>
+
+            <div id="2" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/explodyparrot.gif" data-test="face-up-image">
             </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/metalparrot.gif" data-test="face-up-image" >
-                </div>
+            <div id="2" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/explodyparrot.gif" data-test="face-up-image">
             </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/revertitparrot.gif" data-test="face-up-image" >
-                </div>
+
+            <div id="3" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/fiestaparrot.gif" data-test="face-up-image">
             </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/tripletsparrot.gif" data-test="face-up-image" >
-                </div>
+            <div id="3" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/fiestaparrot.gif" data-test="face-up-image">
             </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/unicornparrot.gif" data-test="face-up-image" >
-                </div>
+
+            <div id="4" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/metalparrot.gif" data-test="face-up-image">
             </div>
+            <div id="4" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/metalparrot.gif" data-test="face-up-image">
+            </div>
+
+            <div id="5" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/revertitparrot.gif" data-test="face-up-image">
+            </div>
+            <div id="5" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/revertitparrot.gif" data-test="face-up-image">
+            </div>
+
+            <div id="6" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/revertitparrot.gif" data-test="face-up-image">
+            </div>
+            <div id="6" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/revertitparrot.gif" data-test="face-up-image">
+            </div>
+
+            <div id="7" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/unicornparrot.gif" data-test="face-up-image">
+            </div>
+            <div id="7" class="memory-card escondido" data-test="card">
+                <img class="front-face face" src="./images/back.png" data-test="face-down-image">
+                <img class="back-face face" src="./images/unicornparrot.gif" data-test="face-up-image">
+            </div>
+            
         </div>
 
-        <div class="segunda-linha">
-
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/unicornparrot.gif" data-test="face-up-image" >
-                </div>
-            </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/tripletsparrot.gif" data-test="face-up-image" >
-                </div>
-            </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/revertitparrot.gif" data-test="face-up-image" >
-                </div>
-            </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                   <img class="parrot-virado-cima" src="./images/metalparrot.gif" data-test="face-up-image" >
-                </div>
-            </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/fiestaparrot.gif" data-test="face-up-image" >
-                </div>
-            </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/explodyparrot.gif" data-test="face-up-image" >
-                </div>
-            </div>
-            <div class="card" data-test="card">
-                <div class="front-face face">
-                    <img class="parrot-virado-baixo" src="./images//back.png" data-test="face-down-image" >
-                </div>
-                <div class="back-face face">
-                    <img class="parrot-virado-cima" src="./images/bobrossparrot.gif"data-test="face-up-image" >
-                </div>
-            </div>
-        </div>
-
-    </div> -->
-    <div class="div-pai"></div>
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
