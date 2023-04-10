@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -83,4 +83,96 @@ body {
     justify-content: center;
     align-items: center;
   }
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEF9BF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-jogo {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  text-align: center;
+  color: #75B79E;
+  position: relative;
+}
+
+.container {
+  margin-top: 47px;
+
+  width: 88%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h1 {
+  align-items: center;
+  font-size: 51px;
+  font-family: roboto;
+  font-weight: 700;
+  color: #75B79E;
+
+}
+
+.card {
+  width: 200px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  background-color: #A7E9AF;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: all .5s;
+  transform-style: preserve-3d;
+}
+
+.back-face {
+  transform: rotateY(180deg);
+}
+
+.backFace {
+  transform: rotateY(0deg);
+}
+
+.frontFace {
+  transform: rotateY(-180deg);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.imageInnerHTML {
+  display: none;
+}
+
+@media (max-width: 700px) {
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
 }
